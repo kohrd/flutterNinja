@@ -6,7 +6,7 @@ void main() => runApp(MaterialApp(
     appBar: AppBar(         // appBar to property, a wartością appBar jest widget AppBar
       title: Text('my first App'),
       centerTitle: true,
-      backgroundColor: Colors.red[800],
+      backgroundColor: Colors.yellow[800],
 
 
 
@@ -15,6 +15,8 @@ void main() => runApp(MaterialApp(
     ),
 
 
+
+    
 
     body: Center(
       child: Text(
@@ -39,6 +41,6 @@ void main() => runApp(MaterialApp(
   ),
 
 
-  
+
 
 ));
