@@ -18,22 +18,25 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.red[400],
       ),
 
-      body: Row(
-        // mainAxisAlignment: MainAxisAlignment.center,
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,  // wyswitlanie w poziomie
-        crossAxisAlignment: CrossAxisAlignment.start,     // wyswietlanie w pionie
-        children: <Widget>[
-          // lista widzetow
-          Text('hello world'),
-          FlatButton(
-              onPressed: () {}, color: Colors.amber, child: Text('cleck me')),
-          Container(
-            color: Colors.cyan,
-            padding: EdgeInsets.all(30.0),
-            child: Text('inside container'),
-          ),
-        ],
-      ),
+
+
+      // body: Container(
+      //   // padding: EdgeInsets.all(20.0),
+      //   // padding: EdgeInsets.symmetric(horizontal: 30.0, vertical: 20.0),
+      //   padding: EdgeInsets.fromLTRB(11.0, 100.0, 30.0, 40.0), // inside container
+      //   margin: EdgeInsets.all(11.0),  // around container
+      //   color: Colors.grey[500],
+      //   child: Text('mozemy napisac to co chcemy albo nawet wiecej lbo jeszcze wiecej'),
+      //
+      //
+      // ),
+        body: Padding(
+          padding: EdgeInsets.all(90.0),
+          child: Text('hello')
+        ),
+
+
+
 
       floatingActionButton: FloatingActionButton(
         onPressed: () {
