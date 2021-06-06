@@ -1,0 +1,69 @@
+import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
+
+void main() => runApp(MaterialApp(home: Home()));
+
+class Home extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      // glowne opakowanie dla widgetow
+      appBar: AppBar(
+        // appBar to property, a wartością appBar jest widget AppBar
+        title: Text(
+          'Proszę',
+          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+        ),
+        centerTitle: true,
+        backgroundColor: Colors.red[400],
+      ),
+
+      body: Column(
+        // mainAxisAlignment: MainAxisAlignment.center,  // w śrdoku
+        //   mainAxisAlignment: MainAxisAlignment.end,  // na dole
+        //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,  // rozciąga rownomiernie
+        // crossAxisAlignment: CrossAxisAlignment.stretch,   // rozciąga kontenery w poziomie
+          crossAxisAlignment: CrossAxisAlignment.center,  // wyrowniae w poziomie, wszystkie centralnie uloone w kolumnie
+        children: <Widget>[
+          Row(    // wiersz w kolumnie (zageszczanie)
+            children: <Widget> [
+              Text('hello'),
+              Text(' world'),
+
+            ]
+          ),
+
+          Container(
+            padding: EdgeInsets.all(20.0),
+            color: Colors.cyan,
+            child: Text('one')
+          ),
+          Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.indigo,
+              child: Text('two')
+          ),
+          Container(
+              padding: EdgeInsets.all(40.0),
+              color: Colors.green,
+              child: Text('three')
+          ),
+          Container(
+              padding: EdgeInsets.all(50.0),
+              color: Colors.deepOrange,
+              child: Text('four')
+          ),
+        ]
+      ),
+
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          print("Artur gra w królika bążór");
+        },
+        child: Text('kliknij'),
+        backgroundColor: Colors.purple[400],
+      ),
+    );
+  }
+}
+

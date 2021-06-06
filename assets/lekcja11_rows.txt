@@ -18,37 +18,22 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.red[400],
       ),
 
-      body: Row(children: <Widget>[
-        Expanded(child: Image.asset('assets/fortnite_1.jpeg'),
-        flex: 3,
-        ),
-        Expanded(
-          flex: 1,  // udział w szerokosci flex 3 i flex 2 i flex 1 daje 6 czyli flex 3 zajmie polowe
-          child: Container(
-            padding: EdgeInsets.all(30.0),
+      body: Row(
+        // mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,  // wyswitlanie w poziomie
+        crossAxisAlignment: CrossAxisAlignment.start,     // wyswietlanie w pionie
+        children: <Widget>[
+          // lista widzetow
+          Text('hello world'),
+          FlatButton(
+              onPressed: () {}, color: Colors.amber, child: Text('cleck me')),
+          Container(
             color: Colors.cyan,
-            child: Text('1'),
-          ),
-        ),
-
-        Expanded(
-          flex: 1,
-          child: Container(
             padding: EdgeInsets.all(30.0),
-            color: Colors.pinkAccent,
-            child: Text('2'),
+            child: Text('inside container'),
           ),
-        ),
-
-        Expanded(
-          flex: 1,
-          child: Container(
-            padding: EdgeInsets.all(30.0),
-            color: Colors.amber,
-            child: Text('3'),
-          ),
-        ),
-      ]),
+        ],
+      ),
 
       floatingActionButton: FloatingActionButton(
         onPressed: () {
@@ -60,3 +45,4 @@ class Home extends StatelessWidget {
     );
   }
 }
+
