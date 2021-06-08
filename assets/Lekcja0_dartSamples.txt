@@ -1,0 +1,52 @@
+void main() {
+  
+  
+  
+  String name = "Konrad";
+  int wiek = 420;
+  
+  String jakisString = returnName(name);
+  print(jakisString);
+  bool prawda = true;
+  bool falsz = false;
+  print (!prawda);
+  dynamic zmiennaTypowanaDynamicznie = 30;
+  zmiennaTypowanaDynamicznie = false;
+  zmiennaTypowanaDynamicznie = "111";
+  // jakis konentrarz
+  print(nowaFunkcjaLambda());
+  print(2==3);
+  
+    // lista
+  List names = ["Tomek", "Andrzej"];
+  names.add("konrad");
+  names.add("Piotr");
+  names.add(4);
+  names.remove(4);
+  print(names);
+  
+  List <String> sameStringwLiscie;
+  sameStringwLiscie.add("cztery");
+  print(sameStringwLiscie);
+  
+  
+}
+
+String nowaFunkcjaLambda() => "zwracamLambde";
+
+
+String returnName (String nazwisko){
+  String noweImie;
+  noweImie = nazwisko+" "+"kowalski";
+  return noweImie;
+}
+
+int returnAge(){
+  return 30;
+}
+
+licznikPetla(int licznik){
+  for (int i = 0; i < licznik; i++) {
+    print('hello ${i + 1}');
+  }
+}

@@ -49,7 +49,8 @@ flutter:
 #    - assets/fortnite_1.jpeg
 #    - assets/fortnite_2.jpeg
 #    - assets/fortnite_3.jpeg
-     - assets/
+  #    - assets/    --> DODDANIE WSZYSTKICH ASSETOW Z AUTOMATU
+     - assets/george.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
